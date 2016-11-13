@@ -1,0 +1,11 @@
+{
+	"name": "Developer",
+	"description": "Programmers will love this pack!",
+	"run": [
+		{
+			"name": "Firefox",
+			"manufacturer": "Mozilla Foundation",
+			"edition": "developeredition",
+		}
+	]
+}

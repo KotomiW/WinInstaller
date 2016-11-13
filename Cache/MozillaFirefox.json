@@ -1,0 +1,24 @@
+{
+	"name": "Firefox",
+	"manufacturer": "Mozilla Foundation",
+	"editions": [
+		{
+			"name": "developeredition",
+			"win64": [
+				{
+					"versionNumber": "51.0a2",
+					"filepath": "firefox-51.0a2.en-US.win64.installer.exe"
+				}
+			]
+		},
+		{
+			"name": "stable",
+			"win32": [
+				{
+					"versionNumber": "49.0.2",
+					"filepath": "Firefox Setup 49.0.2.exe"
+				}
+			]
+		}
+	]
+}

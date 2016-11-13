@@ -1,0 +1,62 @@
+{
+	"name": "Firefox",
+	"manufacturer": "Mozilla Foundation",
+	"default-version": "stable",
+	"default-language": "en-US",
+	"compatibility": {
+		"win32": "win",
+		"win64": "win64",
+		"osx": "osx",
+	},
+	"languages": [
+		"en-US",
+		"en-GB",
+		"id",
+	],
+	"prerequsites": {
+	},
+	"dofirst": false,
+	"dolast": false,
+	"copy": [
+		{
+			"file": "MozillaFirefoxSlient.ini",
+			//"rename": "MozillaFirefoxSlient.ini"
+		}
+	],
+	"installarguments": "/INI={scripts}\\MozillaFirefoxSilent.ini",
+	"editions": [
+		{
+			"name": "stable",
+			"versionformat": "\\d*.\\d*.\\d*",
+			"url": "https://download.mozilla.org/?product=firefox-latest-SSL&os={compatibility}&lang={language}"
+		},
+		{
+			"name": "esr",
+			"versionformat": "\\d*.\\d*.\\d*",
+			"url": "https://download.mozilla.org/?product=firefox-esr-latest-SSL&os={compatibility}&lang={language}"
+		},
+		{
+			"name": "beta",
+			"versionformat": "\\d*.\\d*beta",
+			"url": "https://download.mozilla.org/?product=firefox-latest-SSL&os={compatibility}&lang={language}"
+		},
+		{
+			"name": "developeredition",
+			"versionformat": "\\d*.\\d*a\\d*",
+			"url": "https://download.mozilla.org/?product=firefox-aurora-latest-SSL&os={compatibility}&lang={language}"
+		},
+		{
+			"name": "nightly",
+			"versionformat": "\\d*.\\d*.\\d*",
+			"win32": {
+				"url": "https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-{version}.{language}.win32.installer.exe"
+			},
+			"win64": {
+				"url": "https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-{version}.{language}.win64.installer.exe"
+			},
+			"osx": {
+				"url": "https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-{version}.{language}.mac.dmg"
+			}
+		}
+	],
+}

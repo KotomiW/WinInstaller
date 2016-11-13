@@ -1,0 +1,13 @@
+{
+	"name": "General",
+	"description": "General programs to install",
+	"run": [
+		{
+			"name": "Firefox",
+			"manufacturer": "Mozilla Foundation",
+			//"edition": "stable",
+			//"language": "en-GB",
+			//"priority": 1,
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "Firefox",
+	"manufacturer": "Mozilla Foundation",
+	"preinstall": [
+		// Multiple steps allowed
+		{
+			"step": "PreInstall",
+			"type": "command"
+			//"command": do something,
+		}
+	],
+	"postinstall": [
+		// Multiple steps allowed
+		{
+			"step": "Apply Registry Entries",
+			"type": "registry",
+			//"command": "registryEntries.reg",
+		}
+	],
+}

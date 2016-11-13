@@ -8,6 +8,9 @@
 		"win64": "win64",
 		"osx": "osx",
 	},
+	"incompatiblesoftware": [
+		// List of incompatible software
+	],
 	"languages": [
 		"en-US",
 		"en-GB",
@@ -23,7 +26,14 @@
 			//"rename": "MozillaFirefoxSlient.ini"
 		}
 	],
-	"installarguments": "/INI={scripts}\\MozillaFirefoxSilent.ini",
+	"install": [
+		// Multiple steps allowed
+		{
+			"step": "Install",
+			"type": "command",
+			"command": "{download} /INI={scripts}\\MozillaFirefoxSilent.ini",
+		}
+	],
 	"editions": [
 		{
 			"name": "stable",
